@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Syne:wght@400;500;600&display=swap');
+
+:root {
+  --highlight: #2eb8b8;
+}
+
 /* General Styling */
+
+/* Google font */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,7 +20,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Syne', sans-serif;
   line-height: 1.5;
 }
 
@@ -28,3 +38,91 @@ p {
   color: #555555;
 }
 
+/* Transition */
+
+a, .button, .icons {
+  transition: all 400ms ease;
+}
+
+/* Navigation */
+
+nav, 
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 12vh
+}
+
+.nav-links {
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: var(--highlight);
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.name:hover {
+  cursor: default;
+}
+
+#appIcon {
+  display: none;
+}
+
+.iconImg {
+  transform: translateY(5px);
+}
+
+/* Rotates the app icon */
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+
+/* .icons {
+  padding: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 25%;
+} */
+
+/* @media only screen and (max-width:999px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .icons {
+    display: none;
+  }
+}
+   */
+
+   @media only screen and (max-width:1000px) {
+    #navBar {
+      display: none;
+    }
+    #appIcon {
+      display: flex;
+    }
+   }
