@@ -40,8 +40,8 @@ p {
 
 /* Transition */
 
-a, .button, .icons {
-  transition: all 400ms ease;
+a, .button {
+  transition: all 350ms ease;
 }
 
 /* Navigation */
@@ -54,7 +54,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 12vh
+  height: 15vh
 }
 
 .nav-links {
@@ -67,6 +67,8 @@ a {
   color: black;
   text-decoration: none;
 }
+
+/* Highlights over mouse hover on links */
 
 a:hover {
   color: var(--highlight);
@@ -83,16 +85,19 @@ a:hover {
   cursor: default;
 }
 
-#appIcon {
+.icons {
   display: none;
 }
 
-.iconImg {
-  transform: translateY(5px);
+
+
+.icons {
+  transform: translateY(1px);
 }
 
 /* Rotates the app icon */
-.rotate:hover {
+
+.iconRotate:hover {
     transform: rotate(45deg);
 }
 
@@ -118,11 +123,11 @@ a:hover {
 }
    */
 
-   @media only screen and (max-width:1000px) {
-    #navBar {
+   @media only screen and (max-width:767px) {
+    .nav-links {
       display: none;
     }
-    #appIcon {
+    .icons {
       display: flex;
     }
    }
