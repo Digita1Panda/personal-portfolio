@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Syne:wght@400;500;600&display=swap');
 
 :root {
-  --highlight: #2eb8b8;
+  --highlight: #f9004d;
 }
 
 /* General Styling */
@@ -100,6 +100,9 @@ a:hover {
 .iconRotate:hover {
     transform: rotate(45deg);
 }
+
+/* Sections */
+
 
 
 /* .icons {
