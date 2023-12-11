@@ -24,24 +24,14 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 p {
-  margin: 0;
   color: #555555;
 }
 
 /* Transition */
 
 a, .button {
-  transition: all 350ms ease;
+  transition: all 200ms ease;
 }
 
 /* Navigation */
@@ -60,7 +50,7 @@ nav {
 .nav-links {
   list-style: none;
   gap: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -89,8 +79,6 @@ a:hover {
   display: none;
 }
 
-
-
 .icons {
   transform: translateY(1px);
 }
@@ -103,15 +91,64 @@ a:hover {
 
 /* Sections */
 
+section {
+  padding: 5vh 0;
+  height: 95vh;
+  margin: 0 10em;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
 
-
-/* .icons {
-  padding: 1rem;
+#hero {
   display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 25%;
-} */
+  justify-content: center;
+  gap: 7rem;
+  height: 80vh;
+}
+
+.pic-container {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  margin: auto 0;
+}
+
+.section_1-text {
+  align-self: center;
+  text-align: center;
+}
+
+.section_1-text p {
+  font-weight: 800;
+}
+
+.title {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.section_1-text_1 {
+  font-size: 1.5rem;
+}
+
+#sm-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 2rem;
+}
+
+/* Icons */
+
+.social-icon {
+  cursor: pointer;
+  height: 1.5rem;
+}
+
+/* Buttons */
+
+
+
 
 /* @media only screen and (max-width:999px) {
   .nav-links {
