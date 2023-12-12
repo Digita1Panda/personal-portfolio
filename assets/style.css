@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Syne', sans-serif;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 p {
@@ -107,20 +107,25 @@ section {
   height: 90vh;
 }
 
-.pic-container {
+.hero_pic-container {
   display: flex;
   height: 500px;
   width: 500px;
   margin: auto 0;
 }
 
-.pic-container img {
+.hero_pic-container img {
   border-radius: 50%;
 }
 
-.section_1-text {
+.hero_text {
   align-self: center;
   text-align: center;
+}
+
+.hero_text p {
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 .title {
@@ -128,10 +133,7 @@ section {
   text-align: center;
 }
 
-.section_1-text_1 {
-  font-size: 1.5rem;
-  font-weight: 800;
-}
+
 
 /* Buttons */
 
@@ -175,7 +177,7 @@ section {
 
 /* Social Media Icons */
 
-#sm-container {
+#socials-container {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
@@ -191,13 +193,52 @@ section {
   transform: scale(1.5);
 }
 
-#about {
-  position: relative;
-  
-}
-
 /* About me section styles */
 
+#about {
+  padding: 5rem;
+  position: relative;
+}
+
+.about-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_pic-container {
+  height: 30rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.about_pic {
+  margin-top: 1.5rem;
+  height: 25vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.about_text-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.about_text_p1-container p {
+  font-weight: 800;
+}
+
+.arrow_down {
+  position: absolute;
+  right: -8rem;
+  bottom: 2rem;
+  height: 2.5rem;
+}
 
 
 
