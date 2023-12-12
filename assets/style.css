@@ -42,9 +42,10 @@ nav,
 }
 
 nav {
+  box-shadow: 0px 0.5px 20px #c4c4c4;
   justify-content: space-around;
   align-items: center;
-  height: 15vh
+  height: 12vh
 }
 
 .nav-links {
@@ -94,16 +95,16 @@ a:hover {
 section {
   padding: 5vh 0;
   height: 95vh;
-  margin: 0 10em;
+  margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  min-height: auto;
 }
 
 #hero {
   display: flex;
   justify-content: center;
   gap: 7rem;
-  height: 80vh;
+  height: 90vh;
 }
 
 .pic-container {
@@ -113,23 +114,66 @@ section {
   margin: auto 0;
 }
 
+.pic-container img {
+  border-radius: 50%;
+}
+
 .section_1-text {
   align-self: center;
   text-align: center;
 }
 
-.section_1-text p {
-  font-weight: 800;
-}
-
 .title {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   text-align: center;
 }
 
 .section_1-text_1 {
   font-size: 1.5rem;
+  font-weight: 800;
 }
+
+/* Buttons */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2vh auto;
+}
+
+.button {
+  font-weight: 500;
+  transition: all 250ms ease;
+  padding: 1rem 2.5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.btn-color_2 {
+  background-color: var(--highlight);
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: 500;
+  transition: all 400ms ease;
+}
+
+.btn-color_1,
+.btn-color_2:hover {
+  background-color: transparent;
+  border: 2px solid var(--highlight);
+  color: black;
+  font-weight: 500;
+}
+
+.btn-color_1:hover {
+  background-color: var(--highlight);
+  border: 2px solid transparent;
+  color: white;
+}
+
+/* Social Media Icons */
 
 #sm-container {
   display: flex;
@@ -138,14 +182,21 @@ section {
   gap: 2rem;
 }
 
-/* Icons */
-
 .social-icon {
   cursor: pointer;
   height: 1.5rem;
 }
 
-/* Buttons */
+.social-icon:hover {
+  transform: scale(1.5);
+}
+
+#about {
+  position: relative;
+  
+}
+
+/* About me section styles */
 
 
 
@@ -163,7 +214,7 @@ section {
 }
    */
 
-   @media only screen and (max-width:767px) {
+   @media only screen and (max-width:900px) {
     .nav-links {
       display: none;
     }
