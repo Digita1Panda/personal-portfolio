@@ -278,6 +278,7 @@ section {
   cursor: pointer;
   display: grid;
   border: 0.15rem solid var(--subtitle);
+  opacity: 0.75;
 }
 
 .grid_content {
@@ -301,8 +302,10 @@ section {
 }
 
 
+
 .work_grid_area:hover {
   transform: scale(1.05);
+  opacity: 1;
 }
 
 #project_1 {
