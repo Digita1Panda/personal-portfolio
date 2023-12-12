@@ -2,6 +2,8 @@
 
 :root {
   --highlight: #f9004d;
+  --subtitle: #555555;
+  --heading: #ffeff4;  
 }
 
 /* General Styling */
@@ -25,7 +27,7 @@ body {
 }
 
 p {
-  color: #555555;
+  color: var(--subtitle);
 }
 
 /* Transition */
@@ -240,6 +242,90 @@ section {
   height: 2.5rem;
 }
 
+/* Work */
+
+
+#work {
+  padding-top: 3rem;
+  margin-top: 3rem;
+}
+
+.work_grid {
+  position: relative;
+  margin: 0 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+    'project_1 project_1'
+    'project_1 project_1'
+    'project_2 project_3'
+    'project_4 project_5';
+  gap: 1rem;
+}
+
+
+#work{
+  position: relative;
+}
+
+.work_grid_area  {
+  position: relative;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0.1rem;
+  cursor: pointer;
+  display: grid;
+  border: 0.15rem solid var(--subtitle);
+}
+
+.grid_content {
+  height: 80vh;
+  padding-bottom: 5rem;
+  justify-content: center;
+}
+
+.heading {
+  position: absolute;
+  background-color: var(--heading);
+  padding: 0.1rem 0.2rem;
+  height: 3rem;
+  width: 6rem; 
+  bottom: 20px;
+  text-align: justify;
+  border: 0.1rem solid var(--highlight);
+  border-radius: 0 2rem 2rem 0;
+  font-size: 0.7rem;
+  border-left: 0;
+}
+
+
+.work_grid_area:hover {
+  transform: scale(1.05);
+}
+
+#project_1 {
+  grid-area: project_1;
+  background-image: url(../images/Webpage.png);
+}
+
+#project_2 {
+  grid-area: project_2;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+#project_3 {
+  grid-area: project_3;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+#project_4 {
+  grid-area: project_4;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+#project_5 {
+  grid-area: project_5;
+  background-image: url(../images/02-portfolio-4.jpg);
+}
 
 
 /* @media only screen and (max-width:999px) {
