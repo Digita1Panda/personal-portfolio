@@ -23,7 +23,7 @@
         </ul>
       </div>
       <div class="icons">
-        <img src="/images/apps-line.png" alt="app icon" class="iconRotate">
+        <img src="./images/apps-line.png" alt="app icon" class="iconRotate">
       </div>
     </nav>
   </header>
@@ -39,35 +39,57 @@
       <p class="section_1-text_1">Front end Web Developer</p>
 
       <div class="btn-container">
-        <button class="btn-color_2" onclick="location.href='#contact'">Let's Talk</button>
-        <button class="btn-color_1" onclick="location.href='#about'">About Me</button>
+        <a href="#about">
+          <button type="button" class="button btn-color_1">About Me</button>
+        </a> 
+        <a href="#contact">
+          <button  type="button" class="button btn-color_2">Let's Talk</button>
+        </a>
       </div>
 
       <div id="sm-container">
-        <img src="/images/Git Hub.png" alt="My GitHub profile" class="social-icon" onclick="location.href='https://github.com/Digita1Panda'">
-        <img src="/images/Linked-In.png" alt="My LinkedIn Profile" class="social-icon" onclick="location.href='https://www.linkedin.com/in/kwoklaw'">
-        <img src="/images/Instagram.png" alt="My Instagram Profile" class="social-icon">
-        <img src="/images/original twitter.png" alt="My Twitter Profile" class="social-icon">
+        <a target="_blank" href="https://github.com/Digita1Panda">
+          <img src="./images/Git Hub.png" alt="My GitHub profile" class="social-icon">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/kwoklaw">
+          <img src="./images/Linked-In.png" alt="My LinkedIn Profile" class="social-icon">
+        </a>
+        <img src="./images/Instagram.png" alt="My Instagram Profile" class="social-icon">
+        <img src="./images/original twitter.png" alt="My Twitter Profile" class="social-icon">
       </div>
     </div>
   </section>
 
-  <!-- <main class="page-wrapper">
-    about me
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
+<main>
+  <!-- About me section -->
+  <section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="aboutMe-container">
+      <div class="aboutMe_pic-container">
+        <img src="./images/language.png" alt="programming languages" class="aboutMe-pic">
+      </div>
+      
+      <div class="aboutMe-text">
+        <p>
+          As a passionate front-end web developer, I thrive on transforming creative concepts
+          into engaging and responsive user experiences. With a keen eye for design and a 
+          commitment to delivering seamless interactions, I bring a blend of technical proficiency 
+          and aesthetic sensibility to every project. My journey in web development is driven by a 
+          relentless pursuit of innovation, staying abreast of the latest industry trends, and a 
+          dedication to crafting visually stunning and functionally robust websites. I excel in 
+          utilizing modern web technologies such as HTML, CSS, and JavaScript to breathe life into
+          digital ideas.
+        </p>
+      </div>
+    </div>
+    <a href="#work">
+      <img src="./images/icons8-down-arrow-100.png" alt="Down arrow" class="arrow_icon">
+    </a>
+  </section>
+</main>
 
-    portfolio container
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
 
-    contact
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main> -->
+
 </body>
 
 </html>
