@@ -18,7 +18,7 @@ N/A
 
 ## Usage 
 
-![Webpage](https://digita1panda.github.io/personal-portfolio/)
+![Webpage](../personal-portfolio/images/screenshot.png)
 
 ## Credits
 
