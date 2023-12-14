@@ -18,7 +18,7 @@ N/A
 
 ## Usage 
 
-![Webpage](../personal-portfolio/images/screenshot.png)
+![Webpage](./images/screenshot.png)
 
 ## Credits
 
