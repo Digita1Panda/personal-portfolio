@@ -425,11 +425,11 @@ footer p {
       flex-direction: row;
       width: 100%;
       box-shadow: none;
-      justify-content: end;
+      justify-content: right;
     }
     .icons {
-      margin-left: 10rem;
-      margin-right: -2rem;
+      margin-left: 5rem;
+      margin-right: 0;
     }
     #hero {
       margin-left: 7rem;
@@ -460,10 +460,39 @@ footer p {
       flex-direction: column;
       margin-top: 0;
       align-content: center;
+      height: 30vh;
     }
     .about_text-container {
      flex-direction: column;
      flex-wrap: wrap;
+     justify-content: flex-start;
+     height: 90vh;
+    }
+    #about h1 {
+      padding-left: 5rem;
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-container {
+      display: flex;
+      flex-direction: column;
+    }
+    #contact {
+      width: 80vw;
+      display: flex;
+      margin-left: 5rem;
+    }
+    .contact-container {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+    }
+    .contact-container .contact_info-container {
+      display: flex;
+      flex-direction: column;
+      
     }
     section, 
     .hero_text {
@@ -473,10 +502,23 @@ footer p {
     section {
       margin: 0 5%;
     }
+   #footer {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      justify-content: end;
+      margin-left: 5.2rem;
+    }
    }
 
-   @media only screen and (max-width:600px) {
+     @media only screen and (max-width:600px) {
+    #work {
+      padding-left: 50px;
+      margin-left: 20px;
+      width: 100%;
+    }
     .work_grid_area .grid_content {
+      height: 80vh;
       grid-template-rows: repeat(4 1r);
       grid-template-columns: 1fr;
       grid-area:
@@ -486,4 +528,7 @@ footer p {
        'project_4'
        'project_5';
     }
+    
    }
+
+    
