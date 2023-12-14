@@ -57,10 +57,15 @@ N/A
 ## Contributing
 
 https://www.w3schools.com/tags/tag_abbr.asp
+
 https://www.w3schools.com/tags/default.asp 
+
 https://stackoverflow.com/questions/18223663/
+
 https://how-to-change-the-opacity-of-image-on-hover-using-css
+
 https://www.w3schools.com/cssref/pr_text_text-decoration.php#:~:text=Definition%20and%20Usage,text%2Ddecoration%2Dthickness
+
 https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
 
 
