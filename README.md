@@ -20,7 +20,7 @@ N/A
 
 ## Usage 
 
-![Webpage](./images/screenshot.png)
+![Webpage](./images/Screenshot%202.png)
 
 ## Credits
 
